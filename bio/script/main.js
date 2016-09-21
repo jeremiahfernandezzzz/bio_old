@@ -14,6 +14,31 @@ var charSwitchVal = -2250;
 //switchChar yay 8-30-2016 1:46pm
 //parallax objects fyeah 9-01-2016 10:00PM
 
+function moveBgMouseDown() {
+	forwardBg();
+	forwardObject(".object-parallax", 10);
+}
+
+function moveObjectsMouseDown() {
+	forwardBg();
+	forwardObject(".object-parallax2", 10);
+}
+
+function kramerAnimateMouseDown () {
+	if (charSwitchVal == 0) {	
+		document.querySelector("#kramer").style.animation =  "animate-char 1.0s steps(4) infinite"; //kramer animation
+	}
+	if (charSwitchVal == -750) {
+		document.querySelector("#kramer").style.animation =  "animate-char3 1.0s steps(4) infinite"; //kid animation
+	}
+	if (charSwitchVal == -1500) {
+		document.querySelector("#kramer").style.animation =  "animate-char5 1.0s steps(4) infinite"; //kid animation
+	}
+	if (charSwitchVal == -2250) {
+		document.querySelector("#kramer").style.animation =  "none"; //kid animation
+	}
+}
+
 function moveBg(e) {
 	if (e.keyCode == 39 && xCtrBg > -7100) {
 		forwardBg();
