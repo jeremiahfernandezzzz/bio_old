@@ -341,12 +341,11 @@
 	animation: animate-char2 1.0s steps(4) infinite;
 }
 
-body, html {
-	overflow: hidden;
+* {
 	margin: 0;
 	padding: 0;
 }
 
-html {
-	position: fixed;
+body {
+	overflow: hidden;
 }
