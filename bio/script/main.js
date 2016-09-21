@@ -14,6 +14,11 @@ var charSwitchVal = -2250;
 //switchChar yay 8-30-2016 1:46pm
 //parallax objects fyeah 9-01-2016 10:00PM
 
+document.body.addEventListener("touchmove", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+}, false);
+
 function moveBgMouseDown() {
 	forwardBg();
 	forwardObject(".object-parallax", 10);
@@ -328,8 +333,3 @@ window.onkeyup = runTheseFunctionsOnKeyUp;
 
 document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
-
-document.body.addEventListener("touchmove", function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-}, false);
