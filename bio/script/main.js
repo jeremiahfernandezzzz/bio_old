@@ -277,4 +277,4 @@ window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
 window.onkeyup = runTheseFunctionsOnKeyUp;
 
-window.onscroll = runTheseFunctionsOnKeyDown;
+window.onclick = runTheseFunctionsOnKeyDown;
