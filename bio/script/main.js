@@ -326,5 +326,5 @@ window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
 window.onkeyup = runTheseFunctionsOnKeyUp;
 
-document.onmousedown = runTheseFunctionsOnMouseDown;
+document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
