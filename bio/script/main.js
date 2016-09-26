@@ -315,6 +315,7 @@ function runTheseFunctionsOnMouseDown(){
 	objectDown("#skill-set", -4800);
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
+	preventDef(e);
 }
   
 function runTheseFunctionsOnKeyUp(e){
@@ -329,6 +330,11 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
+function preventDef(e) {
+	e.preventDefault();
+    e.stopPropagation();
+}
+
 window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
 window.onkeyup = runTheseFunctionsOnKeyUp;
@@ -336,7 +342,4 @@ window.onkeyup = runTheseFunctionsOnKeyUp;
 document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
 
-document.body.addEventListener("touchmove", function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-}, false);
+
