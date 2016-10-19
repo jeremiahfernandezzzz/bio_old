@@ -339,16 +339,19 @@ function preventDef(e) {
 	e.stopPropagation();
 }
 
+function down() {
+	isDown = true;
+}
+
+function up(){
+	isDown = false;
+}
 
 window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
 window.onkeyup = runTheseFunctionsOnKeyUp;
-window.onmousedown = function() {
-	isDown = true;
-}
-window.onmouseup = function() {
-	isDown = false;
-}
+window.onmousedown = down;
+window.onmouseup = up;
 
 document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
