@@ -7,6 +7,7 @@ var xCtrObjects = 0;
 var object;
 var objectPopAt;
 var charSwitchVal = -2250; 
+var isDown = false;
 //8 - 28 - 2016 di gumagana :( var bg = document.querySelector(".bg");
 //8 - 28 - 2016 di gumagana :( var kramer = document.querySelector("#kramer");
 //8 - 29 - 2016 xCtrBg is DECREASING. Papuntang negative ang values. Ingat sa > at <. Medyo baligtad sila. lmao
@@ -338,7 +339,6 @@ function preventDef(e) {
 	e.stopPropagation();
 }
 
-var isDown = false;
 
 window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
