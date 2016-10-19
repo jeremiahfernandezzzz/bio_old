@@ -348,10 +348,10 @@ function up(){
 }
 
 window.onload = runTheseFunctionsOnLoad;
-window.onkeydown = runTheseFunctionsOnKeyDown;
-window.onkeyup = runTheseFunctionsOnKeyUp;
-window.onmousedown = down;
-window.onmouseup = up;
+window.onkeydown = down;//runTheseFunctionsOnKeyDown;
+window.onkeyup = up;//runTheseFunctionsOnKeyUp;
+//window.onmousedown = down;
+//window.onmouseup = up;
 
 document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
