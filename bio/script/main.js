@@ -7,7 +7,6 @@ var xCtrObjects = 0;
 var object;
 var objectPopAt;
 var charSwitchVal = -2250; 
-var isDown = false;
 //8 - 28 - 2016 di gumagana :( var bg = document.querySelector(".bg");
 //8 - 28 - 2016 di gumagana :( var kramer = document.querySelector("#kramer");
 //8 - 29 - 2016 xCtrBg is DECREASING. Papuntang negative ang values. Ingat sa > at <. Medyo baligtad sila. lmao
@@ -22,30 +21,7 @@ document.body.addEventListener("touchmove", function(event) {
 }, false);
 */
 
-function moveBgMouseDown() {
-	forwardBg();
-	forwardObject(".object-parallax", 10);
-}
 
-function moveObjectsMouseDown() {
-	forwardBg();
-	forwardObject(".object-parallax2", 10);
-}
-
-function kramerAnimateMouseDown () {
-	if (charSwitchVal == 0) {	
-		document.querySelector("#kramer").style.animation =  "animate-char 1.0s steps(4) infinite"; //kramer animation
-	}
-	if (charSwitchVal == -750) {
-		document.querySelector("#kramer").style.animation =  "animate-char3 1.0s steps(4) infinite"; //kid animation
-	}
-	if (charSwitchVal == -1500) {
-		document.querySelector("#kramer").style.animation =  "animate-char5 1.0s steps(4) infinite"; //kid animation
-	}
-	if (charSwitchVal == -2250) {
-		document.querySelector("#kramer").style.animation =  "none"; //kid animation
-	}
-}
 
 function moveBg(e) {
 	if (e.keyCode == 39 && xCtrBg > -7100) {
@@ -293,33 +269,6 @@ function runTheseFunctionsOnKeyDown(e){
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
 }
-
-function runTheseFunctionsOnMouseDown(){
-	while (isDown == true) {
-		xCtr();
-		hideInitialDialog(),
-		switchChar(-1760,-3020,-4270),
-		moveBgMouseDown(), 
-		moveObjectsMouseDown(), 
-		kramerAnimateMouseDown(), 
-		changeDialog("I'm 19<br/>years old", -1490, 450), 
-		changeDialog("Went to school<br/>at these years", -2470, 600), 
-		changeDialog("Then I went<br/>to college", -3650, 600), 
-		changeDialog("I shifted<br/>courses", -4300, 300), 
-		changeDialog("mech. eng.<br/>is hard", -4600, 200), 
-		changeDialog("<br/>i haz skillz", -5050, 450), 
-		changeDialog("moar skillz", -5700, 450) ,
-		changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
-		//changeDialog("press tab<br/>to navigate", -7100, 225) ,
-		objectUp("#hospital", -1250), 
-		objectUp("#grade-school", -2450), 
-		objectUp("#high-school", -3650);
-		objectDown("#skill-set", -4800);
-		objectDown("#otherskill-set", -5650);
-		objectUp("#contact-form", -6750);
-		preventDef(e);
-	}
-}
   
 function runTheseFunctionsOnKeyUp(e){
 	kramerStatic();
@@ -331,29 +280,12 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
-	runTheseFunctionsOnMouseDown();
 }
 
-function preventDef(e) {
-	e.preventDefault();
-	e.stopPropagation();
-}
-
-function down() {
-	isDown = true;
-}
-
-function up(){
-	isDown = false;
-}
 
 window.onload = runTheseFunctionsOnLoad;
-window.onkeydown = down;//runTheseFunctionsOnKeyDown;
-window.onkeyup = up;//runTheseFunctionsOnKeyUp;
-//window.onmousedown = down;
-//window.onmouseup = up;
+window.onkeydown = runTheseFunctionsOnKeyDown;
+window.onkeyup = runTheseFunctionsOnKeyUp;
 
-document.ontouchmove = runTheseFunctionsOnMouseDown;
-document.onmouseup = runTheseFunctionsOnKeyUp;
 
 
