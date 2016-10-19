@@ -294,28 +294,30 @@ function runTheseFunctionsOnKeyDown(e){
 }
 
 function runTheseFunctionsOnMouseDown(){
-	xCtr();
-	hideInitialDialog(),
-	switchChar(-1760,-3020,-4270),
-	moveBgMouseDown(), 
-	moveObjectsMouseDown(), 
-	kramerAnimateMouseDown(), 
-	changeDialog("I'm 19<br/>years old", -1490, 450), 
-	changeDialog("Went to school<br/>at these years", -2470, 600), 
-	changeDialog("Then I went<br/>to college", -3650, 600), 
-	changeDialog("I shifted<br/>courses", -4300, 300), 
-	changeDialog("mech. eng.<br/>is hard", -4600, 200), 
-	changeDialog("<br/>i haz skillz", -5050, 450), 
-	changeDialog("moar skillz", -5700, 450) ,
-	changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
-	//changeDialog("press tab<br/>to navigate", -7100, 225) ,
-	objectUp("#hospital", -1250), 
-	objectUp("#grade-school", -2450), 
-	objectUp("#high-school", -3650);
-	objectDown("#skill-set", -4800);
-	objectDown("#otherskill-set", -5650);
-	objectUp("#contact-form", -6750);
-	preventDef(e);
+	while (isDown == true) {
+		xCtr();
+		hideInitialDialog(),
+		switchChar(-1760,-3020,-4270),
+		moveBgMouseDown(), 
+		moveObjectsMouseDown(), 
+		kramerAnimateMouseDown(), 
+		changeDialog("I'm 19<br/>years old", -1490, 450), 
+		changeDialog("Went to school<br/>at these years", -2470, 600), 
+		changeDialog("Then I went<br/>to college", -3650, 600), 
+		changeDialog("I shifted<br/>courses", -4300, 300), 
+		changeDialog("mech. eng.<br/>is hard", -4600, 200), 
+		changeDialog("<br/>i haz skillz", -5050, 450), 
+		changeDialog("moar skillz", -5700, 450) ,
+		changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
+		//changeDialog("press tab<br/>to navigate", -7100, 225) ,
+		objectUp("#hospital", -1250), 
+		objectUp("#grade-school", -2450), 
+		objectUp("#high-school", -3650);
+		objectDown("#skill-set", -4800);
+		objectDown("#otherskill-set", -5650);
+		objectUp("#contact-form", -6750);
+		preventDef(e);
+	}
 }
   
 function runTheseFunctionsOnKeyUp(e){
@@ -328,6 +330,7 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
+	runTheseFunctionsOnMouseDown();
 }
 
 function preventDef(e) {
@@ -335,10 +338,17 @@ function preventDef(e) {
 	e.stopPropagation();
 }
 
+var isDown = false;
+
 window.onload = runTheseFunctionsOnLoad;
 window.onkeydown = runTheseFunctionsOnKeyDown;
 window.onkeyup = runTheseFunctionsOnKeyUp;
-window.onclick = runTheseFunctionsOnMouseDown;
+window.onmousedown = function() {
+	isDown = true;
+}
+window.onmouseup = function() {
+	isDown = false;
+}
 
 document.ontouchmove = runTheseFunctionsOnMouseDown;
 document.onmouseup = runTheseFunctionsOnKeyUp;
