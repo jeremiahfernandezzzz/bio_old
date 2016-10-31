@@ -67,7 +67,7 @@ function forward(e) {
 	}
 }
 
-function touchForward(){
+/*function touchForward(){
 	//from moveBg - moves primary background
 	if (xCtrBg > -7100) {
 		forwardObject(".object-parallax", 10);
@@ -80,11 +80,6 @@ function touchForward(){
 		document.querySelector(object).style.transform = 'translateX(' + xCtrObjects + 'px)';
 		xCtrObjects -= pixels;
 	}
-	
-	//from moveObjects - moves parallax background
-	/*if (xCtrBg > -5350) {
-		forwardObject(".object-parallax2", 10);
-	}*/
 	
 	if (xCtrBg <= -1340) {
 		document.querySelector("#sun").style.transform = 'translate(' + xCtrSun + 'px, ' + yCtrSun + 'px)';
@@ -114,7 +109,7 @@ function touchForward(){
 	if (charSwitchVal == -2250) {
 		document.querySelector("#kramer").style.animation =  "none"; //kid animation
 	}
-}
+}*/
 
 function backward(e){
 		
