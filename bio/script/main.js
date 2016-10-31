@@ -292,7 +292,10 @@ function runTheseFunctionsOnLoad(e){
 }
 
 window.addEventListener("touchstart", touchstart, false);
-window.onload = runTheseFunctionsOnLoad;
-window.onkeydown = runTheseFunctionsOnKeyDown;
-window.onkeyup = runTheseFunctionsOnKeyUp;
+window.addEventListener("load", runTheseFunctionsOnLoad, false);
+window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
+window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
+//window.onload = runTheseFunctionsOnLoad;
+//window.onkeydown = runTheseFunctionsOnKeyDown;
+//window.onkeyup = runTheseFunctionsOnKeyUp;
 
