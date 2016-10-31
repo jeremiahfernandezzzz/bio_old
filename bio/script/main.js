@@ -206,7 +206,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>Change 1!<br />Hold ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>Change 2!<br />Hold ->" ;
 }
 
 function hideInitialDialog () {
@@ -280,7 +280,6 @@ function touchstart(){
   
 function runTheseFunctionsOnKeyUp(){
 	kramerStatic();
-	sunMoonAnimate();
 	hideDialog();
 }
 
@@ -288,14 +287,10 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
-	mouseCtr();
 }
 
 window.addEventListener("touchstart", touchstart, false);
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
-//window.onload = runTheseFunctionsOnLoad;
-//window.onkeydown = runTheseFunctionsOnKeyDown;
-//window.onkeyup = runTheseFunctionsOnKeyUp;
 
