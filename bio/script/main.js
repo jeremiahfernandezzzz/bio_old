@@ -286,7 +286,7 @@ function runTheseFunctionsOnKeyUp(){
 function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
-	kramerStatic();
+	window.setTimeout(kramerStatic,2000);
 }
 
 window.addEventListener("touchstart", touchstart, false);
