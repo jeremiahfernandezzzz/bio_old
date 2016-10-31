@@ -281,7 +281,7 @@ function touchstart(){
 function runTheseFunctionsOnKeyUp(){
 	kramerStatic();
 	sunMoonAnimate();
-	window.setTimeout(hideDialog, 2000);
+	hideDialog();
 }
 
 function runTheseFunctionsOnLoad(e){
