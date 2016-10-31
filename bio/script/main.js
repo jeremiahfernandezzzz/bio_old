@@ -234,18 +234,6 @@ function switchChar(switchAt1, switchAt2, switchAt3){
 	}
 }
   
-function runTheseFunctionsOnKeyDown(e){
-	forward(e),
-	backward(e),
-	default();
-}
-
-function touchstart(){
-	e.preventDefault();
-	touchForward();
-	default();
-}
-
 function default() {
 	xCtr();
 	hideInitialDialog(),
@@ -264,6 +252,18 @@ function default() {
 	objectDown("#skill-set", -4800);
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
+}
+
+function runTheseFunctionsOnKeyDown(e){
+	forward(e),
+	backward(e),
+	default();
+}
+
+function touchstart(){
+	e.preventDefault();
+	touchForward();
+	default();
 }
   
 function runTheseFunctionsOnKeyUp(){
