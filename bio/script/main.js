@@ -280,13 +280,13 @@ function touchstart(){
   
 function runTheseFunctionsOnKeyUp(){
 	kramerStatic();
-	hideDialog();
+	window.setTimeout(hideDialog, 2000);
 }
 
 function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
-	window.setTimeout(kramerStatic,2000);
+	kramerStatic();
 }
 
 window.addEventListener("touchstart", touchstart, false);
