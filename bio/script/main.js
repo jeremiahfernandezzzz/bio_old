@@ -254,18 +254,6 @@ function runTheseFunctionsOnKeyDown(e){
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
 }
-
-/*function runTheseFunctionsOnKeyDown(e){
-	forward(e),
-	backward(e),
-	default();
-}
-
-function touchstart(){
-	e.preventDefault();
-	touchForward();
-	default();
-}*/
   
 function runTheseFunctionsOnKeyUp(){
 	kramerStatic();
