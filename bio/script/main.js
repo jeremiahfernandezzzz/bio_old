@@ -261,6 +261,8 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
+window.onkeydown = runTheseFunctionsOnKeyDown;
+
 window.addEventListener("touchstart", touchstart, false);
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
