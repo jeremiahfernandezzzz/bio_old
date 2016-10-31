@@ -234,8 +234,9 @@ function switchChar(switchAt1, switchAt2, switchAt3){
 	}
 }
   
-function default() {
-	xCtr();
+function runTheseFunctionsOnKeyDown(e){
+	forward(e),
+	backward(e),
 	hideInitialDialog(),
 	switchChar(-1760,-3020,-4270),
 	changeDialog("I'm 19<br/>years old", -1490, 450), 
@@ -254,11 +255,11 @@ function default() {
 	objectUp("#contact-form", -6750);
 }
 
-function runTheseFunctionsOnKeyDown(e){
+/*function runTheseFunctionsOnKeyDown(e){
 	forward(e),
 	backward(e),
 	default();
-}
+}*/
 
 function touchstart(){
 	e.preventDefault();
