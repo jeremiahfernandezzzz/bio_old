@@ -261,7 +261,6 @@ function runTheseFunctionsOnKeyDown(e){
 	changeDialog("<br/>i haz skillz", -5050, 450), 
 	changeDialog("moar skillz", -5700, 450) ,
 	changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
-	changeDialog("press tab<br/>to navigate", -7100, 225) ,
 	objectUp("#hospital", -1250), 
 	objectUp("#grade-school", -2450), 
 	objectUp("#high-school", -3650);
