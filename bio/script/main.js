@@ -232,7 +232,7 @@ window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
 		boolGo = true;
-		forward();
+		setTimeout(forward, 500);
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
