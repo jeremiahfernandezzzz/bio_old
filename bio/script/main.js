@@ -99,8 +99,8 @@ function backward(){
 
 	if (xCtrBg < -6260) {
 		document.querySelector("#moon").style.transform = 'translate(' + xCtrMoon + 'px, ' + yCtrMoon + 'px)';
-		yCtrMoon += 3;
-		xCtrMoon += 7;
+		yCtrMoon += 6;
+		xCtrMoon += 10;
 	}
 
 	if (charSwitchVal == 0) {	
