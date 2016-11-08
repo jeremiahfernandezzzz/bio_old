@@ -33,7 +33,7 @@ function forward(){//from moveBg - moves primary background
 		forwardObject(".object-parallax2", 10);
 	}*/
 
-	if (xCtrBg <= -1340) {
+	if (xCtrBg <= -1340 && xCtrBg > -7100) {
 		document.querySelector("#sun").style.transform = 'translate(' + xCtrSun + 'px, ' + yCtrSun + 'px)';
 		xCtrSun += 12;
 		if (xCtrSun < 3500){
