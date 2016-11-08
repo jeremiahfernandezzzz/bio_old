@@ -6,7 +6,7 @@ var xCtrBg = 0;
 var xCtrObjects = 0;
 var object;
 var objectPopAt;
-var charSwitchVal = -2250; 
+var charSwitchVal = -2250;
 //8 - 28 - 2016 di gumagana :( var bg = document.querySelector(".bg");
 //8 - 28 - 2016 di gumagana :( var kramer = document.querySelector("#kramer");
 //8 - 29 - 2016 xCtrBg is DECREASING. Papuntang negative ang values. Ingat sa > at <. Medyo baligtad sila. lmao
@@ -81,41 +81,39 @@ function backward(){
 		xCtrObjects += pixels;
 	}
 	
-	if (e.keyCode == 37) {
-		if (xCtrBg < 0) {
-			backwardObject(".object-parallax", 10);
-			backwardObject(".object-parallax2", 10);
-			document.querySelector(".bg").style.transform = 'translateX(' + xCtrBg + 'px)';
-			xCtrBg += 10;
-		}
-		
-		document.querySelector("#sun").style.transform = 'translate(' + xCtrSun + 'px, ' + yCtrSun + 'px)';
-		xCtrSun -= 12;
-		
-		if (xCtrSun < 3500){
-			yCtrSun += 6;
-		} else {
-			yCtrSun -= 6;
-		}
-		
-		if (xCtrBg < -6260) {
-			document.querySelector("#moon").style.transform = 'translate(' + xCtrMoon + 'px, ' + yCtrMoon + 'px)';
-			yCtrMoon += 3;
-			xCtrMoon += 7;
-		}
-		
-		if (charSwitchVal == 0) {	
-			document.querySelector("#kramer").style.animation =  "animate-char2 1.0s steps(4) infinite"; //kramer animation
-		}
-		if (charSwitchVal == -750) {
-			document.querySelector("#kramer").style.animation =  "animate-char4 1.0s steps(4) infinite"; //kid animation
-		}
-		if (charSwitchVal == -1500) {
-			document.querySelector("#kramer").style.animation =  "animate-char6 1.0s steps(4) infinite"; //kid animation
-		}
-		if (charSwitchVal == -1500) {
-			document.querySelector("#kramer").style.animation =  "none"; //kid animation
-		}
+	if (xCtrBg < 0) {
+		backwardObject(".object-parallax", 10);
+		backwardObject(".object-parallax2", 10);
+		document.querySelector(".bg").style.transform = 'translateX(' + xCtrBg + 'px)';
+		xCtrBg += 10;
+	}
+
+	document.querySelector("#sun").style.transform = 'translate(' + xCtrSun + 'px, ' + yCtrSun + 'px)';
+	xCtrSun -= 12;
+
+	if (xCtrSun < 3500){
+		yCtrSun += 6;
+	} else {
+		yCtrSun -= 6;
+	}
+
+	if (xCtrBg < -6260) {
+		document.querySelector("#moon").style.transform = 'translate(' + xCtrMoon + 'px, ' + yCtrMoon + 'px)';
+		yCtrMoon += 3;
+		xCtrMoon += 7;
+	}
+
+	if (charSwitchVal == 0) {	
+		document.querySelector("#kramer").style.animation =  "animate-char2 1.0s steps(4) infinite"; //kramer animation
+	}
+	if (charSwitchVal == -750) {
+		document.querySelector("#kramer").style.animation =  "animate-char4 1.0s steps(4) infinite"; //kid animation
+	}
+	if (charSwitchVal == -1500) {
+		document.querySelector("#kramer").style.animation =  "animate-char6 1.0s steps(4) infinite"; //kid animation
+	}
+	if (charSwitchVal == -1500) {
+		document.querySelector("#kramer").style.animation =  "none"; //kid animation
 	}
 }
 
@@ -164,7 +162,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>Change 122!<br />Hold ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>Change asd!<br />Hold ->" ;
 }
 
 function hideInitialDialog () {
