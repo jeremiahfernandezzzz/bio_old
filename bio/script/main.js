@@ -15,6 +15,10 @@ var charSwitchVal = -2250;
 //parallax objects fyeah 9-01-2016 10:00PM
 //10 - 31 - 2016 im back biatch
 
+var onlongtouch; 
+var timer;
+var touchduration = 500; //length of time we want the user to touch before we do something
+
 function forward(){//from moveBg - moves primary background
 	if (xCtrBg > -7100) {
 		forwardObject(".object-parallax", 10);
@@ -223,6 +227,6 @@ function runTheseFunctionsOnLoad(e){
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
+window.addEventListener("keydown", forward, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
