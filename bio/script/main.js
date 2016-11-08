@@ -7,7 +7,6 @@ var xCtrObjects = 0;
 var object;
 var objectPopAt;
 var charSwitchVal = -2250; 
-var boolForward = false;
 //8 - 28 - 2016 di gumagana :( var bg = document.querySelector(".bg");
 //8 - 28 - 2016 di gumagana :( var kramer = document.querySelector("#kramer");
 //8 - 29 - 2016 xCtrBg is DECREASING. Papuntang negative ang values. Ingat sa > at <. Medyo baligtad sila. lmao
@@ -71,7 +70,12 @@ function forwardOnKeyPress(e) {
 }
 
 function backwardOnKeyPress(e){
-		
+	if (e.keyCode == 37) {
+		backward();
+	}	
+}
+
+function backward(){
 	function backwardObject(object, pixels){
 		document.querySelector(object).style.transform = 'translateX(' + xCtrObjects + 'px)';
 		xCtrObjects += pixels;
@@ -160,7 +164,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>Change 2!<br />Hold ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>Change 122!<br />Hold ->" ;
 }
 
 function hideInitialDialog () {
