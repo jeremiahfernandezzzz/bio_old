@@ -16,16 +16,6 @@ var boolForward = false;
 //parallax objects fyeah 9-01-2016 10:00PM
 //10 - 31 - 2016 im back biatch
 
-function boolGo(e) {
-	if (e.keyCode == 32) {
-		boolForward = true;
-	}
-}
-
-function boolStop() {
-	boolFwd = false;
-}
-
 function forward(){//from moveBg - moves primary background
 	if (xCtrBg > -7100) {
 		forwardObject(".object-parallax", 10);
@@ -230,13 +220,8 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
-if (boolForward == true) {
-	runTheseFunctionsOnKeyDown()
-} else {
-	runTheseFunctionsOnKeyUp()
-}
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", boolGo, false);
-window.addEventListener("keyup", boolStop, false);
+window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
+window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
