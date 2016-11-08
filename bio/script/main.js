@@ -17,7 +17,8 @@ var charSwitchVal = -2250;
 
 var boolForward = false;
 
-function boolGo() {
+function boolGo() 
+	boolForward = true;
 	if (boolForward == true) {
 		forward(),
 		hideInitialDialog(),
@@ -255,6 +256,6 @@ function setForward(e) [
 
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", setForward, false);
+window.addEventListener("keydown", boolGo, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
