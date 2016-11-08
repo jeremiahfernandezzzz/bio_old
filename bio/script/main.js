@@ -19,7 +19,7 @@ var boolForward = false;
 
 function boolGo() 
 	boolForward = true;
-	if (boolForward == true) {
+	while (boolForward == true) {
 		forward(),
 		hideInitialDialog(),
 		switchChar(-1760,-3020,-4270),
@@ -187,7 +187,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>Change qwe!<br />Hold ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>Change qyu!<br />Hold ->" ;
 }
 
 function hideInitialDialog () {
