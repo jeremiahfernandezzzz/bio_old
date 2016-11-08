@@ -226,7 +226,7 @@ function runTheseFunctionsOnLoad(e){
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
-		while (1==1){
+		for(;;){
 			forward();
 		}
 	}, false);
