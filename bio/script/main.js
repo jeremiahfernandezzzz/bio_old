@@ -16,7 +16,7 @@ var boolForward = false;
 //parallax objects fyeah 9-01-2016 10:00PM
 //10 - 31 - 2016 im back biatch
 
-function boolGo() {
+function boolGo(e) {
 	if (e.keyCode == 32) {
 		boolForward = true;
 	}
