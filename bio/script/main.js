@@ -7,6 +7,7 @@ var xCtrObjects = 0;
 var object;
 var objectPopAt;
 var charSwitchVal = -2250; 
+var boolForward = false;
 //8 - 28 - 2016 di gumagana :( var bg = document.querySelector(".bg");
 //8 - 28 - 2016 di gumagana :( var kramer = document.querySelector("#kramer");
 //8 - 29 - 2016 xCtrBg is DECREASING. Papuntang negative ang values. Ingat sa > at <. Medyo baligtad sila. lmao
@@ -15,6 +16,15 @@ var charSwitchVal = -2250;
 //parallax objects fyeah 9-01-2016 10:00PM
 //10 - 31 - 2016 im back biatch
 
+function boolGo() {
+	if (e.keyCode == 32) {
+		boolForward = true;
+	}
+}
+
+function boolStop() {
+	boolFwd = false;
+}
 
 function forward(){//from moveBg - moves primary background
 	if (xCtrBg > -7100) {
@@ -220,7 +230,13 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
+if (boolForward == true) {
+	runTheseFunctionsOnKeyDown()
+} else {
+	runTheseFunctionsOnKeyUp()
+}
+
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
-window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
+window.addEventListener("keydown", boolGo, false);
+window.addEventListener("keyup", boolStop, false);
 
