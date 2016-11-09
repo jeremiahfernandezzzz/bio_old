@@ -41,7 +41,7 @@ function forward(){//from moveBg - moves primary background
 		if (xCtrSun < 3500){
 			yCtrSun -= 6;
 		} else {
-			yCtrSun += 6;
+			yCtrSun += 7;
 		}
 	}
 
@@ -96,7 +96,7 @@ function backward(){
 	if (xCtrSun < 3500){
 		yCtrSun += 6;
 	} else {
-		yCtrSun -= 6;
+		yCtrSun -= 7;
 	}
 
 	if (xCtrBg < -6260) {
