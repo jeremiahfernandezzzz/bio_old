@@ -232,6 +232,9 @@ window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
 		boolGo = true;
+		while (boolGo == true) {
+			setTimeout(forward, 500);
+		}
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
