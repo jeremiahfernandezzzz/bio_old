@@ -223,14 +223,15 @@ function runTheseFunctionsOnLoad(e){
 	showDialog();
 	kramerStatic();
 }
+		
+while (boolGo == true) {
+	setTimeout(forward, 500);
+}
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
 		boolGo = true;
-		if (boolGo == true) {
-			setTimeout(forward, 500);
-		}
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
