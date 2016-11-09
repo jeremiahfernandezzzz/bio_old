@@ -217,6 +217,17 @@ function runTheseFunctionsOnKeyDown(e){
   
 function auto() {
 	window.setInterval(forward, 50);
+}
+
+/*
+function runTheseFunctionsOnKeyUp(){
+	kramerStatic();
+	window.setTimeout(hideDialog, 2000);
+}
+*/
+
+function runTheseFunctionsOnLoad(){
+	auto();
 	hideInitialDialog(),
 	switchChar(-1760,-3020,-4270),
 	changeDialog("I'm 19<br/>years old", -1490, 450), 
@@ -233,15 +244,6 @@ function auto() {
 	objectDown("#skill-set", -4800);
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
-}
-
-function runTheseFunctionsOnKeyUp(){
-	kramerStatic();
-	window.setTimeout(hideDialog, 2000);
-}
-
-function runTheseFunctionsOnLoad(){
-	auto();
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
