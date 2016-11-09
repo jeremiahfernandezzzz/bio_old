@@ -224,9 +224,7 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
-alert("asd")
-
-while (boolGo == true) {
+if (boolGo == true) {
 	setTimeout(forward, 500);
 }
 
