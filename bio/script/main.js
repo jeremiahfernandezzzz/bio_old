@@ -214,7 +214,7 @@ function runTheseFunctionsOnKeyDown(e){
 }
   
 function auto() {
-	window.setInterval(forward, 200);
+	window.setInterval(forward, 50);
 }
 
 function runTheseFunctionsOnKeyUp(){
