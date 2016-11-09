@@ -229,6 +229,7 @@ function runTheseFunctionsOnLoad(e){
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
+		boolGo = true;
 		forward();
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
