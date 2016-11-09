@@ -222,13 +222,16 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
+	auto();
 }
 
 while (boolGo == true) {
 	forward();
 }
 
-setInterval(forward,1000);
+function auto() {
+	setInterval(forward,1000);
+}
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
