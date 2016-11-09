@@ -224,17 +224,10 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
-if (boolGo == true) {
-	setTimeout(forward, 500);
-}
-
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
-		boolGo = true;
-		while (boolGo == true) {
-			setTimeout(forward, 500);
-		}
+		forward();
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
