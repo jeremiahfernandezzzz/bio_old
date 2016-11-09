@@ -166,7 +166,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>Change qyu!<br />Hold ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>while!<br />Hold ->" ;
 }
 
 function hideInitialDialog () {
