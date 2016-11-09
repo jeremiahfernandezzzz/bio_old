@@ -215,8 +215,8 @@ function runTheseFunctionsOnKeyDown(e){
 }
 */
   
-function auto() {
-	window.setInterval(forward, 50);
+function runTheseFunctionsOnLoad() {
+	window.setInterval(auto, 50);
 }
 
 /*
@@ -226,8 +226,8 @@ function runTheseFunctionsOnKeyUp(){
 }
 */
 
-function runTheseFunctionsOnLoad(){
-	auto();
+function auto(){
+	forward();
 	hideInitialDialog(),
 	switchChar(-1760,-3020,-4270),
 	changeDialog("I'm 19<br/>years old", -1490, 450), 
