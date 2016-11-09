@@ -230,7 +230,7 @@ while (boolGo == true) {
 }
 
 function auto() {
-	setInterval(forward,1000);
+	window.setInterval(forward,1000);
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
