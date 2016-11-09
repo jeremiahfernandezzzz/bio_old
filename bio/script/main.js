@@ -223,7 +223,9 @@ function runTheseFunctionsOnLoad(e){
 	showDialog();
 	kramerStatic();
 }
-		
+
+alert("asd")
+
 while (boolGo == true) {
 	setTimeout(forward, 500);
 }
