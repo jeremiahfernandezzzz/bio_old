@@ -224,13 +224,14 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
+while (boolGo == true) {
+	forward();
+}
+
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
 		boolGo = true;
-		while (boolGo == true) {
-			forward();
-		}
 	}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
