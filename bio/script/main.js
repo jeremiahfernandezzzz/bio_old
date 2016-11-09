@@ -213,6 +213,10 @@ function runTheseFunctionsOnKeyDown(e){
 	objectUp("#contact-form", -6750);
 }
   
+function auto() {
+	window.setInterval(forward,1000);
+}
+
 function runTheseFunctionsOnKeyUp(){
 	kramerStatic();
 	window.setTimeout(hideDialog, 2000);
@@ -222,22 +226,10 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
-	auto();
-}
-
-while (boolGo == true) {
-	forward();
-}
-
-function auto() {
-	window.setInterval(forward,1000);
+	//auto();
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", 
-	function() {
-		setInterval(forward,1000);
-	}
-}, false);
+window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
