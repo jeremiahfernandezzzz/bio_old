@@ -18,7 +18,7 @@ var boolGo = false;
 
 
 function forward(){//from moveBg - moves primary background
-	while (boolGo == true) {
+	if (boolGo == true) {
 		if (xCtrBg > -7100) {
 			forwardObject(".object-parallax", 10);
 			forwardObject(".object-parallax2", 10);
