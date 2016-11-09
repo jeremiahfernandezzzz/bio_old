@@ -240,7 +240,7 @@ function runTheseFunctionsOnKeyUp(){
 	window.setTimeout(hideDialog, 2000);
 }
 
-function runTheseFunctionsOnLoad(e){
+function runTheseFunctionsOnLoad(){
 	auto();
 }
 
