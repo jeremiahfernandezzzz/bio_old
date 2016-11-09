@@ -231,7 +231,8 @@ while (boolGo == true) {
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
-		boolGo = true;
-	}, false);
+		setInterval(forward,1000);
+	}
+}, false);
 window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
