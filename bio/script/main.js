@@ -246,6 +246,6 @@ function runTheseFunctionsOnLoad(e){
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
-window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
+//window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
+//window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
 
