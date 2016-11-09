@@ -228,7 +228,7 @@ window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
 		boolGo = true;
-		while (boolGo == true) {
+		if (boolGo == true) {
 			setTimeout(forward, 500);
 		}
 	}, false);
