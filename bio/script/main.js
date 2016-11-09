@@ -241,9 +241,6 @@ function runTheseFunctionsOnKeyUp(){
 }
 
 function runTheseFunctionsOnLoad(e){
-	initialDialog();
-	showDialog();
-	kramerStatic();
 	auto();
 }
 
