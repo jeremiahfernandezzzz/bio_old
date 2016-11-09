@@ -224,6 +224,8 @@ function runTheseFunctionsOnLoad(e){
 	kramerStatic();
 }
 
+forward();
+
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
