@@ -228,6 +228,8 @@ while (boolGo == true) {
 	forward();
 }
 
+setInterval(forward,1000);
+
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
