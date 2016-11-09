@@ -226,7 +226,7 @@ function runTheseFunctionsOnLoad(e){
 	initialDialog();
 	showDialog();
 	kramerStatic();
-	//auto();
+	auto();
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
