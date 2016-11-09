@@ -225,7 +225,6 @@ function runTheseFunctionsOnLoad(e){
 }
 
 forward();
-
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
 window.addEventListener("keydown", 
 	function() {
