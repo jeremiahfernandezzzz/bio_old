@@ -191,7 +191,8 @@ function switchChar(switchAt1, switchAt2, switchAt3){
 		charSwitchVal = 0;
 	}
 }
-  
+
+/*
 function runTheseFunctionsOnKeyDown(e){
 	forwardOnKeyPress(e),
 	backwardOnKeyPress(e),
@@ -212,6 +213,7 @@ function runTheseFunctionsOnKeyDown(e){
 	objectDown("#otherskill-set", -5650);
 	objectUp("#contact-form", -6750);
 }
+*/
   
 function auto() {
 	window.setInterval(forward, 50);
