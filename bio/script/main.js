@@ -227,26 +227,28 @@ function runTheseFunctionsOnKeyUp(){
 */
 
 function auto(){
-	forward();
-	hideInitialDialog(),
-	switchChar(-1760,-3020,-4270),
-	changeDialog("I'm 19<br/>years old", -1490, 450), 
-	changeDialog("Went to school<br/>at these years", -2470, 600), 
-	changeDialog("Then I went<br/>to college", -3650, 600), 
-	changeDialog("I shifted<br/>courses", -4300, 300), 
-	changeDialog("mech. eng.<br/>is hard", -4600, 200), 
-	changeDialog("<br/>i haz skillz", -5050, 450), 
-	changeDialog("moar skillz", -5700, 450) ,
-	changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
-	objectUp("#hospital", -1250), 
-	objectUp("#grade-school", -2450), 
-	objectUp("#high-school", -3650);
-	objectDown("#skill-set", -4800);
-	objectDown("#otherskill-set", -5650);
-	objectUp("#contact-form", -6750);
+	if (boolGo == true) {
+		forward();
+		hideInitialDialog(),
+		switchChar(-1760,-3020,-4270),
+		changeDialog("I'm 19<br/>years old", -1490, 450), 
+		changeDialog("Went to school<br/>at these years", -2470, 600), 
+		changeDialog("Then I went<br/>to college", -3650, 600), 
+		changeDialog("I shifted<br/>courses", -4300, 300), 
+		changeDialog("mech. eng.<br/>is hard", -4600, 200), 
+		changeDialog("<br/>i haz skillz", -5050, 450), 
+		changeDialog("moar skillz", -5700, 450) ,
+		changeDialog("Though there's<br/>a lot to learn", -6550, 225) ,
+		objectUp("#hospital", -1250), 
+		objectUp("#grade-school", -2450), 
+		objectUp("#high-school", -3650);
+		objectDown("#skill-set", -4800);
+		objectDown("#otherskill-set", -5650);
+		objectUp("#contact-form", -6750);
+	}
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-//window.addEventListener("keydown", runTheseFunctionsOnKeyDown, false);
-//window.addEventListener("keyup", runTheseFunctionsOnKeyUp, false);
+window.addEventListener("keydown", function() {boolGo = true}, false);
+window.addEventListener("keyup", function() {boolGo = false}, false);
 
