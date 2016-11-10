@@ -286,7 +286,7 @@
 	width: 160px;
 	height: 160px;
 	bottom: -15vh;
-	//transition: transform .2s;
+	transition: transform .2s;
 }
 
 #moon {
@@ -296,7 +296,7 @@
 	width: 160px;
 	height: 160px;
 	background: url(../image/moon.png);
-	//transition: transform .2s;
+	transition: transform .2s;
 }
 
 @font-face {
