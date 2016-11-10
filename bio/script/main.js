@@ -252,6 +252,8 @@ function auto(){
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
+
+/*
 window.addEventListener("keydown", 
 	function(e) {
 		if (e.keyCode == 37) {
@@ -262,5 +264,19 @@ window.addEventListener("keydown",
 			window.setTimeout(hideDialog, 2000);
 		}
 	}, false);
+*/
+
+window.addEventListener("touchstart", 
+	function() {
+		boolGo = true;
+	}, false);
+
+window.addEventListener("touchend", 
+	function() {
+		boolGo = false;
+		kramerStatic();
+		window.setTimeout(hideDialog, 2000);
+	}, false);
+
 //window.addEventListener("keyup", function() {boolGo = false}, false);
 
