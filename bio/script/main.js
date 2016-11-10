@@ -164,7 +164,7 @@ function hideDialog() {
 }
 
 function initialDialog () {
-	document.querySelector(".dialog").innerHTML = "<br/>'sup! touch or<br />click to ->" ;
+	document.querySelector(".dialog").innerHTML = "<br/>hi! touch or<br />click to ->" ;
 }
 
 function hideInitialDialog () {
