@@ -278,5 +278,16 @@ window.addEventListener("touchend",
 		window.setTimeout(hideDialog, 2000);
 	}, false);
 
+window.addEventListener("mousedown", 
+	function() {
+		boolGo = true;
+	}, false);
+
+window.addEventListener("mouseup", 
+	function() {
+		boolGo = false;
+		kramerStatic();
+		window.setTimeout(hideDialog, 2000);
+	}, false);
 //window.addEventListener("keyup", function() {boolGo = false}, false);
 
