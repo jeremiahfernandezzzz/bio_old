@@ -217,6 +217,9 @@ function runTheseFunctionsOnKeyDown(e){
   
 function runTheseFunctionsOnLoad() {
 	window.setInterval(auto, 50);
+	initialDialog();
+	showDialog();
+	kramerStatic();
 }
 
 /*
@@ -255,6 +258,8 @@ window.addEventListener("keydown",
 			boolGo = true;
 		} else if (e.keyCode == 39){
 			boolGo = false;
+			kramerStatic();
+			window.setTimeout(hideDialog, 2000);
 		}
 	}, false);
 //window.addEventListener("keyup", function() {boolGo = false}, false);
