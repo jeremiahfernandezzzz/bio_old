@@ -249,6 +249,13 @@ function auto(){
 }
 
 window.addEventListener("load", runTheseFunctionsOnLoad, false);
-window.addEventListener("keydown", function() {boolGo = true}, false);
-window.addEventListener("keyup", function() {boolGo = false}, false);
+window.addEventListener("keydown", 
+	function(e) {
+		if (e.keyCode == 37) {
+			boolGo = true;
+		} else if (e.keyCode == 39){
+			boolGo = false;
+		}
+	}, false);
+//window.addEventListener("keyup", function() {boolGo = false}, false);
 
