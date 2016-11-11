@@ -51,7 +51,7 @@
 	position: absolute;
 	width: 9500%;
 	height: 100vh; 
-	transition : transform 0.02s;
+	//transition : transform 0.2s;
 }
 
 .ground {
@@ -171,14 +171,14 @@
 .object-parallax {
 	position: absolute;
 	width: 9500%;
-	transition : transform 0.02s; 
+	//transition : transform 0.2s; 
 }
 	
 .object-parallax2 {
 	left: -5%;
 	position: absolute;
 	width: 9500%;
-	transition : transform 0.02s;
+	//transition : transform 0.2s;
 	z-index: 98;
 }
 
