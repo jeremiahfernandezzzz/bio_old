@@ -216,7 +216,7 @@ function runTheseFunctionsOnKeyDown(e){
 */
   
 function runTheseFunctionsOnLoad() {
-	window.setInterval(auto, 50);
+	window.setInterval(auto, 10);
 	initialDialog();
 	showDialog();
 	kramerStatic();
