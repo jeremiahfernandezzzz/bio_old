@@ -211,7 +211,7 @@
 	background: url(../image/hospital.png);
 	width: 700px;
 	height: 455px;
-	bottom: -100vh;
+	bottom: 10vh;
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
@@ -286,7 +286,7 @@
 	width: 160px;
 	height: 160px;
 	bottom: -15vh;
-	transition: transform .2s;
+	//transition: transform .2s;
 }
 
 #moon {
@@ -296,7 +296,7 @@
 	width: 160px;
 	height: 160px;
 	background: url(../image/moon.png);
-	transition: transform .2s;
+	//transition: transform .2s;
 }
 
 @font-face {
