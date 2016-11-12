@@ -211,7 +211,7 @@
 	background: url(../image/hospital.png);
 	width: 700px;
 	height: 455px;
-	bottom: 10vh;
+	bottom: -100vh;
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
