@@ -335,7 +335,7 @@
 	position: relative;
 	background: url(../image/ghibli_ghost.png);
 	width: 150px;
-	height: 40px;
+	height: 375px;
 	animation: animate-char2 1.0s steps(4) infinite;
 	top: 30vh;
 }
