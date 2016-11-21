@@ -203,6 +203,7 @@
 .title {
 	position: fixed;
 	text-align: center;
+	vertical-align: bottom;
 	font-family: Pixeled;
 	z-index: 99;
 	bottom: 10vh;
