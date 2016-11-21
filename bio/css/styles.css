@@ -338,6 +338,7 @@
 	height: 375px;
 	animation: animate-char2 1.0s steps(4) infinite;
 	top: 30vh;
+	text-align: center;
 }
 
 .about {
@@ -345,7 +346,6 @@
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
-	vertical-align: text-top;
 	top: 30vh;
 }
 
