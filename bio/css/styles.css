@@ -193,9 +193,11 @@
 }
 
 .title {
+	position: relative;
 	text-align: center;
 	font-family: Pixeled;
 	z-index: 99;
+	top: 62vh;
 }
 
 #hospital {
