@@ -201,7 +201,7 @@
 }
 
 .title {
-	position: fixed;
+	position: relative;
 	text-align: center;
     	font-family: Pixeled;
    	z-index: 99;
@@ -342,7 +342,7 @@
 }
 
 .about {
-	position: relative;
+	position: fixed;
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
