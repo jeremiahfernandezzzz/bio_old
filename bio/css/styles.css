@@ -332,7 +332,7 @@
 }
 
 .ghost {
-	position: fixed;
+	position: relative;
 	background: url(../image/ghibli_ghost.png);
 	width: 150px;
 	height: 375px;
@@ -341,6 +341,7 @@
 	font-size: 14pt;
 	font-family: Pixeled;
 	animation: animate-char2 1.0s steps(4) infinite;
+	top: 62vh;
 }
 
 * {
