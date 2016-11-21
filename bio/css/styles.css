@@ -204,6 +204,7 @@
 	text-align: center;
 	font-family: Pixeled;
 	z-index: 99;
+	bottom: 10vh;
 }
 
 #hospital {
