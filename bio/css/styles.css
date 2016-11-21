@@ -201,7 +201,7 @@
 }
 
 .title {
-	position: relative;
+	position: fixed;
 	text-align: center;
     	font-family: Pixeled;
    	z-index: 99;
@@ -332,7 +332,7 @@
 }
 
 .ghost {
-	position: relative;
+	position: fixed;
 	background: url(../image/ghibli_ghost.png);
 	width: 150px;
 	height: 375px;
