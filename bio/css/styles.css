@@ -34,14 +34,6 @@
 	100% {bottom: 8vh;}
 }
 
-@keyframes animate-moon {
-	0% {transform: rotate(0deg)}
-	25% {transform: rotate(15deg)}
-	50% {transform: rotate(30deg)}
-	75% {transform: rotate(15deg)}
-	100% {transform: rotate(0deg)}
-}
-
 @keyframes sidescroll{
 	from { transform: translate( 0px, 0px) }
 	to { transform: translate( -8000px, -10px) }
@@ -334,17 +326,11 @@
 	background: url(../image/ghibli_ghost.png);
 	width: 150px;
 	height: 375px;
-	animation: animate-char2 1.0s steps(4) infinite;
-	top: 30vh;
-	text-align: center;
-}
-
-.about {
-	position: fixed;
+	bottom: 8vh;
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
-	top: 80vh;
+	animation: animate-char2 1.0s steps(4) infinite;
 }
 
 * {
