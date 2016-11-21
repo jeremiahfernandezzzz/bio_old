@@ -328,11 +328,17 @@
 	background: url(../image/ghibli_ghost.png);
 	width: 150px;
 	height: 375px;
-	bottom: 8vh;
+	animation: animate-char2 1.0s steps(4) infinite;
+	top: 30vh;
+	text-align: center;
+}
+
+.about {
+	position: fixed;
 	text-align: center;
 	font-size: 14pt;
 	font-family: Pixeled;
-	animation: animate-char2 1.0s steps(4) infinite;
+	top: 80vh;
 }
 
 * {
