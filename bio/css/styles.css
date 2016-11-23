@@ -167,6 +167,7 @@
 }
 	
 .object-parallax2 {
+	left: -5%;
 	position: absolute;
 	width: 9500%;
 	//transition : transform 0.2s;
