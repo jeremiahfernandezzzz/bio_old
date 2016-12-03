@@ -256,22 +256,17 @@
 }
 
 #contact-form {
-	
-	z-index: 100;
 	position: fixed;
 	background: url(../image/contact-form.png);
 	width: 700px;
 	height: 455px;
 	bottom: -100vh;
 	text-align: center;
-	font-size: 10pt;
-	font-family: Pixeled;
-	
-}
-
-#contact-info 
 	font-size: 20pt;
 	font-family: slkscr;
+}
+
+#contact-info {
 }
 
 #sun {
