@@ -256,6 +256,8 @@
 }
 
 #contact-form {
+	
+	z-index: 100;
 	position: fixed;
 	background: url(../image/contact-form.png);
 	width: 700px;
@@ -267,9 +269,7 @@
 	
 }
 
-#contact-info {
-	position: absolute;
-	z-index: 100;
+#contact-info 
 	font-size: 20pt;
 	font-family: slkscr;
 }
