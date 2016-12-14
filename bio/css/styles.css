@@ -183,7 +183,7 @@
 .dialog {
 	background: url(../image/dialog.png);
 	position: fixed;
-	width: 250px;
+	width: 240px;
 	height: 180px;
 	bottom: 30vh;
 	text-align: center;
